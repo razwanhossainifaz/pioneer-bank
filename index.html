@@ -20,7 +20,17 @@
             <button id = "login" class ="btn btn-success">Enter</button>
         </div>
     </div>
+    <div id="transaction-area">
+        <h1 class="text-center">Transaction Area</h1>
+    </div>
 </body>
 <script>
+    const loginBtn = document.getElementById("login");
+    loginBtn.addEventListener("click", function(){
+        const loginArea = document.getElementById("login-area");
+        loginArea.style.display = "none";
+        const transactionArea = document.getElementById("transaction-area");
+        transactionArea.style.display = "block";
+    })
 </script>
 </html>
