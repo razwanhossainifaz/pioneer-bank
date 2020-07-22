@@ -2,6 +2,23 @@ body{
     padding: 100px;
     font-family: 'Roboto', sans-serif;
 }
+hr{
+    width: 100px;
+    height: 5px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(120deg, #e65c00, #ffb380);
+}
+.hr-style{
+    width: 300px;
+    height: 5px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(120deg, #e65c00, #ffb380);
+}
+.login-style{
+    margin-bottom: 30px;
+}
 .submit-area{
     margin-top: 50px;
     border-radius: 10px;
@@ -10,4 +27,35 @@ body{
 }
 #transaction-area{
     display: none;
+}
+.text-style{
+    margin-bottom: 10px;
+}
+.status{
+    margin: 0px 20px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    color: white;
+}
+.status h2{
+    font-size: 40px;
+}
+.deposit{
+    background-color: slateblue;
+}
+.withdraw{
+    background-color: lightsalmon;
+}
+.balance{
+    background-color: orange;
+}
+.box{
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 40px; 
+}
+.box h1{
+    font-size: 30px;
 }

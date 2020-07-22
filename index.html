@@ -11,8 +11,9 @@
 <body>
     <div id="login-area">
         <h1 class="text-center">Welcome to the Pioneer Bank of Ifaz</h1>
+        <hr class= "hr-style">
         <div class="submit-area">
-            <h4>LogIn</h4>
+            <h4 class= "text-center login-style">LogIn</h4>
             <input class="form-control" type="email" name="email" placeholder="Enter Your Email">
             <br>
             <input class="form-control" type="password" name="password" placeholder="Enter Your Password">
@@ -21,16 +22,63 @@
         </div>
     </div>
     <div id="transaction-area">
-        <h1 class="text-center">Transaction Area</h1>
+        <h1 class="text-center text-style">Transaction Area</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$00</h2> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$1200</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <h1>Deposit</h1>
+                    <input id = "depositAmount" placeholder ="$ amount you want to deposit" class="form-control" type="text" name="text">
+                    <br>
+                    <button id = "addDeposit" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box">
+                    <h1>Withdraw</h1>
+                    <input placeholder ="$ amount you want to withdraw" class="form-control" type="text" name="text">
+                    <br>
+                    <button class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script>
+    //login button event handler
     const loginBtn = document.getElementById("login");
     loginBtn.addEventListener("click", function(){
         const loginArea = document.getElementById("login-area");
         loginArea.style.display = "none";
         const transactionArea = document.getElementById("transaction-area");
         transactionArea.style.display = "block";
+    })
+
+    //deposit button event handler
+    const depositBtn = document.getElementById("addDeposit");
+    depositBtn.addEventListener("click", function(){
+        const depositAmount = document.getElementById("depositAmount").value;
+        // const depositAmount = parseFloat(depositAmount);
     })
 </script>
 </html>
